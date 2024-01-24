@@ -1,0 +1,80 @@
+body {
+    font-family: 'Bahnschrift', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #3498db;
+    color: #ecf0f1;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #e74c3c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #d35400;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ecf0f1; 
+}
+
+section {
+    padding: 20px;
+    background-color: #3498db; 
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.section-heading,
+.project-heading,
+.about-me-heading,
+.projects-heading {
+    color: #bdc3c7;
+}
+
+.project {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+section p,
+.project p,
+.about-me p,
+.projects p {
+    color: #bdc3c7;
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 1.5em;
+    }
+}

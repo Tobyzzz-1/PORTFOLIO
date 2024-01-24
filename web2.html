@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Toby Vincent</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am a passionate CS undergrad working his way through to implement machine learning to create solutions for rather humane problems.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Smart dustbin</h3>
+            <p>Smart dustbin that intimates the user when it is full along with shortest distance routing considering several nodes in a college campus</p>
+        </div>
+        <div class="project">
+            <h3>Legal Document Creation</h3>
+            <p>Automatic Indian Legal document generator using langchain that is tuned to provide legally accurate documents.</p>
+        </div>
+        <div class="project">
+            <h3>Lifestyle Application(In progress)</h3>
+            <p>...</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>HTML, CSS, JavaScript, Node.js, Java, C, C++, Python, Machine Learning, Computer Vision etc.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: tobyjvj@gmail.com</p>
+        <p>GitHub: github.com/Tobyzzz-1</p>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
